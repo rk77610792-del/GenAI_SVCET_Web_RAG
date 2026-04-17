@@ -24,7 +24,7 @@ load_dotenv()
 # On Streamlit Cloud, they will be read from the repository's secrets
 groq_api_key = st.secrets.get("GROQ_API_KEY")
 os.environ["SERPAPI_API_KEY"] = st.secrets.get("SERPAPI_API_KEY")
-os.environ["HF_TOKEN"] = st.secrets.get("HT_TOKEN")
+os.environ["HF_TOKEN"] = st.secrets.get("HF_TOKEN")
 st.set_page_config(page_title="Web RAG with Groq & SerpApi", layout="wide")
 st.image("sc.jpg")
 st.title("Web RAG: Q&A with Website Content and Google Search")
